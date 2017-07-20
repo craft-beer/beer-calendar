@@ -1,26 +1,18 @@
 <template>
-  <div>
-    <h1>{{ msg }}</h1>
-    <p>{{ name }}</p>
+  <div class="app-beer-calendar">
+    <navbar></navbar>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-const name = '아라레';
+import Navbar from './navbar/Navbar.vue';
 
 export default {
   name: 'app',
 
-  data() {
-    return {
-      msg: 'Hello World',
-      name
-    }
+  components: {
+    Navbar
   }
 }
 </script>
-
-<style>
-  
-</style>

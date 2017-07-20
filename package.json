@@ -12,12 +12,14 @@
     "babel-loader": "^7.1.1",
     "babel-preset-env": "^1.6.0",
     "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2",
     "vue-loader": "^12.2.2",
     "vue-template-compiler": "^2.4.1",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1"
   },
   "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
     "vue": "^2.4.1",
     "vue-router": "^2.7.0",
     "vuex": "^2.3.1"
