@@ -3,14 +3,18 @@ import VueRouter from 'vue-router';
 
 import Home from './components/home/Home.vue';
 import About from './components/about/About.vue';
+import Calendar from './components/calendar/Calendar.vue';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/about', component: About }
+  { path: '/about', component: About },
+  { path: '/calendar', component: Calendar },
 ];
 
-export const router = new VueRouter({
+const router = new VueRouter({
   routes
 });
+
+export default router;

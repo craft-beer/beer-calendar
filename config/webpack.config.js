@@ -19,9 +19,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        include: /src/
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
       },
       {
         test: /\.js$/,
@@ -29,14 +28,15 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader'
-      }
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        include: /src/
+      },
     ]
   },
 
   devServer: {
-    contentBase: path.resolve(__dirname, '../dist'),
+    contentBase: [path.resolve(__dirname, '../dist'), path.resolve(__dirname, '../data')],
     historyApiFallback: true,
     noInfo: true
   }
