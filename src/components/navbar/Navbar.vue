@@ -4,11 +4,11 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Navbar</a>
+      <router-link to="/" class="navbar-brand" exact>Be-Ca</router-link>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <router-link tag="li" to="/" class="nav-item" active-class="active">
+          <router-link tag="li" to="/" class="nav-item" active-class="active" exact>
             <a class="nav-link">Home</a>
           </router-link>
           <router-link tag="li" to="/about" class="nav-item" active-class="active">
